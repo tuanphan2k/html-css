@@ -12,7 +12,6 @@ Cargo.lock
 .DS_Store
 
 # Parcel related files
-dist/
 .cache/
 
 # Packages
