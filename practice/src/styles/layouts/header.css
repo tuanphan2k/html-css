@@ -1,0 +1,250 @@
+/* Header styles */
+
+.banner {
+  height: 540px;
+  background-image: url(../../assets/images/thumbnail-mobile.webp);
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.main-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header {
+  padding: 20px 0;
+}
+
+.header-logo {
+  order: 1;
+  color: var(--color-primary);
+  font-family: var(--font-secondary-bold);
+  font-size: var(--font-size-2xl);
+  letter-spacing: 1.1px;
+}
+
+.header-social {
+  display: flex;
+  gap: 20px;
+  order: 2;
+}
+
+.header-social-link {
+  display: flex;
+  align-items: center;
+}
+
+.header-social-icon {
+  height: 16px;
+}
+
+.social-icon-twitter {
+  width: 24px;
+}
+
+.social-icon-facebook,
+.social-icon-instagram {
+  width: 16px;
+}
+
+.bars-icon {
+  order: 3;
+}
+
+.header-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 40px 20px 0;
+  width: 320px;
+  height: 100vh;
+  background-color: var(--color-secondary);
+  transform: translateX(-100%);
+  transition: all linear 0.2s;
+}
+
+.header-menu-item {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.header-menu-link {
+  font-size: var(--font-size-md);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-light);
+}
+
+.header-close-icon {
+  text-align: end;
+}
+
+/* Display menus when click hamburger icon */
+.input-toogle:checked ~ .header-menu {
+  display: block;
+  transform: translateX(0%);
+}
+
+.banner-content {
+  width: 240px;
+  margin: 72px auto 0;
+  text-align: center;
+}
+
+.banner-content-heading {
+  line-height: 24px;
+  letter-spacing: -0.8px;
+}
+
+.video-container {
+  position: relative;
+  margin: 34px 0 106px;
+}
+
+.btn-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.scroll-down {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    height: 564px;
+    background-image: url(../../assets/images/thumbnail-tablet.webp);
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+
+  .main-header {
+    padding: 32px 0;
+  }
+
+  .header-logo {
+    font-size: var(--font-size-3xl);
+    letter-spacing: 1.3px;
+  }
+
+  .header-menu {
+    position: static;
+    transform: none;
+    display: block;
+    padding: 0;
+    height: 100%;
+    width: fit-content;
+    background-color: transparent;
+    order: 1; /* Menus should appear after the logo */
+  }
+
+  .header-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+  }
+
+  .header-menu-item {
+    position: relative;
+    margin: 0;
+  }
+
+  .header-menu-item::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--color-light);
+    transition: width 0.3s ease-in-out;
+  }
+
+  .header-menu-item:hover:after {
+    width: 100%;
+  }
+
+  .header-menu-link {
+    font-size: var(--font-size-sm);
+  }
+
+  .header-close-icon,
+  .bars-icon {
+    display: none;
+  }
+
+  .banner-content {
+    width: 524px;
+    margin: 42px auto 0;
+  }
+
+  .banner-content-heading {
+    line-height: 36px;
+  }
+
+  .video-container {
+    margin: 34px auto 66px;
+    width: 344px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    height: 768px;
+    background-image: url(../../assets/images/thumbnail-desktop.webp);
+  }
+
+  .main-header {
+    padding: 48px 0;
+  }
+
+  .header-logo {
+    font-size: var(--font-size-5xl);
+    letter-spacing: 2px;
+  }
+
+  .header-social {
+    gap: 42px;
+  }
+
+  .header-social-icon {
+    height: 24px;
+  }
+
+  .social-icon-twitter {
+    width: 30px;
+  }
+
+  .social-icon-facebook,
+  .social-icon-instagram {
+    width: 24px;
+  }
+
+  .header-menu-link {
+    font-size: var(--font-size-xl);
+  }
+
+  .banner-content {
+    margin-top: 28px;
+    width: 620px;
+  }
+
+  .banner-content-heading {
+    line-height: 48px;
+  }
+
+  .video-container {
+    margin: 54px auto 66px;
+    width: 555px;
+  }
+}

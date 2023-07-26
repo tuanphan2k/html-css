@@ -1,0 +1,23 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+Cargo.lock
+
+# dotenv environment variables file
+.env
+.DS_Store
+
+# Parcel related files
+dist/
+.cache/
+
+# Packages
+/node_modules
+
+# Cache
+.parcel-cache
+

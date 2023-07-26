@@ -1,0 +1,27 @@
+/* CSS variables */
+
+:root {
+  /* Font family */
+  --font-primary: Acme;
+  --font-secondary: MontserratRegular;
+  --font-secondary-bold: MontserratBold;
+
+  /* Color */
+  --color-primary: #ebcb80;
+  --color-secondary: #4b4b4b;
+  --color-light: #fff;
+  --color-light-gray: #f6f6f6;
+  --color-dark: #7d7d7d;
+
+  /* Font size */
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-md: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 32px;
+  --font-size-5xl: 36px;
+  --font-size-6xl: 44px;
+  --font-size-7xl: 64px;
+}

@@ -1,0 +1,25 @@
+/* BASES */
+@import url("../styles/bases/reset.css");
+@import url("../styles/bases/typography.css");
+@import url("../styles/bases/variables.css");
+@import url("../styles/bases/global.css");
+
+/* LAYOUTS */
+@import url("../styles/layouts/container.css");
+@import url("../styles/layouts/header.css");
+@import url("../styles/layouts/footer.css");
+
+/* COMPONENTS */
+@import url("../styles/components/button.css");
+@import url("../styles/components/heading.css");
+@import url("../styles/components/text.css");
+
+/* SECTIONS */
+@import url("../styles/sections/features.css");
+@import url("../styles/sections/banner-version.css");
+@import url("../styles/sections/banner-story.css");
+@import url("../styles/sections/testimonials.css");
+@import url("../styles/sections/portfolio.css");
+@import url("../styles/sections/choose-plan.css");
+@import url("../styles/sections/map.css");
+@import url("../styles/sections/stay-in-touch.css");

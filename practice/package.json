@@ -1,0 +1,16 @@
+{
+  "name": "html-css-training",
+  "version": "1.0.0",
+  "main": "index.js",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "tuan.phan@asoft.com.vn",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}

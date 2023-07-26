@@ -1,0 +1,105 @@
+.features {
+  padding: 38px 0 244px;
+  background-image: url(../../assets/images/mac-mobile-screen.webp);
+  background-repeat: no-repeat;
+  background-position: center bottom 38px;
+}
+
+.features-introduction {
+  margin: 18px 0 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: var(--font-secondary-bold);
+  font-size: var(--font-size-sm);
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0px 16px;
+}
+
+.features-item {
+  display: flex;
+}
+
+.features-advantage {
+  margin-left: 14px;
+}
+
+.advantage-title {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.8px;
+}
+
+.item-photo-boxer {
+  min-width: 40px;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .features {
+    padding: 42px 0 126px;
+    background-image: url(../../assets/images/mac-tablet-screen.webp);
+    background-position: right bottom 30px;
+  }
+
+  .features-introduction {
+    margin: 22px 0 76px;
+  }
+
+  .features-list {
+    gap: 72px;
+    width: 305px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features {
+    padding: 80px 0 116px;
+    background-image: url(../../assets/images/mac-desktop-screen.webp);
+    background-position: right 72px bottom 59px;
+  }
+
+  .features-introduction {
+    margin: 32px auto 90px;
+    font-size: var(--font-size-xl);
+    letter-spacing: 1px;
+  }
+
+  .features-list {
+    gap: 36px;
+    width: 360px;
+  }
+
+  .item-photo-boxer {
+    min-width: 53px;
+  }
+
+  .devices-icon {
+    width: 53px;
+    height: 44px;
+  }
+
+  .diamond-icon {
+    width: 45px;
+    height: 38px;
+  }
+
+  .stack-layers-icon {
+    width: 36px;
+    height: 48px;
+  }
+
+  .features-advantage {
+    margin-left: 26px;
+  }
+
+  .advantage-title {
+    font-size: var(--font-size-md);
+    letter-spacing: 0.9px;
+  }
+}

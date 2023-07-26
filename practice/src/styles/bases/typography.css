@@ -1,0 +1,19 @@
+/* Custom font face declarations */
+
+@font-face {
+  font-family: MontserratRegular;
+  src: url("../../assets/fonts/Montserrat/Montserrat-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MontserratBold;
+src: url("../../assets/fonts/Montserrat/Montserrat-Bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Acme;
+  src: url("../../assets/fonts/Acme/Acme-Regular.ttf");
+  font-display: swap;
+}

@@ -1,0 +1,183 @@
+.stay-connected {
+  padding: 26px 0 42px;
+}
+
+.stay-connected-container {
+  padding: 0 17px;
+}
+
+.stay-connected-wrapper {
+  padding-top: 22px;
+}
+
+.stay-connected-form {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.split-half-container {
+  display: flex;
+  gap: 12px;
+}
+
+.stay-connected-input {
+  margin-bottom: 22px;
+  padding-bottom: 4px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-dark);
+  font-size: var(--font-size-xs);
+  width: 100%;
+}
+
+.stay-connected-input:focus {
+  outline: none;
+}
+
+.info-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-item {
+  display: flex;
+}
+
+.contact-icon-wrapper {
+  width: 20px;
+  text-align: center;
+}
+
+.contact-item-link {
+  padding-left: 12px;
+  font-size: var(--font-size-xs);
+  color: var(--color-secondary);
+}
+
+.contact-social {
+  display: flex;
+  gap: 30px;
+  margin: 24px auto 0;
+}
+
+.contact-social-icon {
+  height: 22px;
+  width: 22px;
+}
+
+.contact-icon-google {
+  width: 32px;
+}
+
+.contact-icon-twitter {
+  width: 27px;
+}
+
+@media (min-width: 768px) {
+  .stay-connected {
+    padding: 34px 0 40px;
+  }
+
+  .stay-connected-container {
+    padding: 0 63px;
+  }
+
+  .stay-connected-wrapper {
+    display: flex;
+    gap: 30px;
+    padding-top: 48px;
+  }
+
+  .stay-connected-form {
+    flex-basis: calc(50% - 15px);
+    padding-top: 12px;
+    margin: 0;
+  }
+
+  .split-half-container {
+    gap: 16px;
+  }
+
+  .form-btn {
+    margin-top: 8px;
+    padding: 9px 46px;
+  }
+
+  .contact-wrapper {
+    flex-basis: calc(50% - 15px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .stay-connected {
+    padding: 60px 0 0;
+  }
+
+  .stay-connected-container {
+    padding: 0 0 72px;
+    background-image: url("../../assets/images/iphone.webp");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+
+  .stay-connected-wrapper {
+    padding-top: 70px;
+    margin: 0 0 0 calc(100% / 3);
+    gap: 100px;
+  }
+
+  .stay-connected-form {
+    padding: 0;
+    flex-basis: calc(50% - 50px);
+  }
+
+  .split-half-container {
+    gap: 20px;
+  }
+
+  .stay-connected-input {
+    margin-bottom: 38px;
+    font-size: var(--font-size-xl);
+  }
+
+  .form-btn {
+    margin-top: 20px;
+    padding: 15px 70px;
+  }
+
+  .contact-wrapper {
+    flex-basis: calc(50% - 50px);
+  }
+
+  .info-contact {
+    gap: 24px;
+  }
+
+  .contact-item-link {
+    font-size: var(--font-size-md);
+    line-height: 24px;
+  }
+
+  .contact-item-link {
+    max-width: 234px;
+  }
+
+  .contact-social {
+    gap: 35px;
+    margin-top: 40px;
+  }
+
+  .contact-social-icon {
+    height: 25px;
+    width: 25px;
+  }
+
+  .contact-icon-google {
+    width: 35px;
+  }
+
+  .contact-icon-twitter {
+    width: 30px;
+  }
+}

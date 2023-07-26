@@ -1,0 +1,50 @@
+body {
+  color: #665544;
+  background-color: #d4d0c6;
+  font-family: Georgia, "Times New Roman", serif;
+  text-align: center;
+}
+
+.wrapper {
+  margin: 0px auto;
+  width: 720px;
+}
+
+.header {
+  margin: 40px 0px 20px;
+}
+
+.header > img {
+  width: 456px;
+  height: 122px;
+}
+
+.entry {
+  float: left;
+  margin: 10px;
+  width: 220px;
+  height: 198px;
+  background-image: url("https://dummyimage.com/300x150/000/fff.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+figure {
+  padding: 9px;
+  width: 202px;
+  height: 170px;
+  background-color: #e7e3d8;
+  text-align: left;
+}
+
+figure img {
+  width: 200px;
+  height: 150px;
+  border: 1px solid #d6d6d6;
+}
+
+figcaption {
+  padding-left: 20px;
+  background-image: url("https://dummyimage.com/300x150/000/fff.jpg");
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,200 @@
+.choose-plan {
+  padding: 52px 0 40px;
+  background-color: hsl(0, 0%, 96%);
+}
+
+.choose-plan-heading {
+  padding-bottom: 52px;
+}
+
+.choose-plan-list {
+  position: relative;
+  height: 248px;
+}
+
+.choose-plan-card {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 24px 0;
+  width: 190px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card-silver {
+  top: -10px;
+  background: linear-gradient(to top, #3a3938 0%, #6f6b6b 100%);
+  z-index: 2;
+  transform: scaleX(0.85) translateX(-59%);
+}
+
+.card-gold {
+  z-index: 3;
+  background: linear-gradient(to top, #ebcb80 0%, #ffe3a1 100%);
+}
+
+.card-platinum {
+  top: -20px;
+  background: linear-gradient(to top, #141414 0%, #282828 100%);
+  z-index: 1;
+  transform: scaleX(0.74) translateX(-67%);
+}
+
+.card-name {
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.card-silver .card-name,
+.card-platinum .card-name {
+  color: var(--color-primary);
+}
+
+.card-price {
+  padding: 12px 0 10px;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-secondary-bold);
+}
+
+.card-price-currency {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-xs);
+}
+
+.card-price-value {
+  letter-spacing: -1.2px;
+}
+
+.card-duration {
+  text-transform: uppercase;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.8px;
+}
+
+.card-info-list {
+  padding: 10px 0 20px;
+  font-size: var(--font-size-xs);
+}
+
+.card-info-item:not(:last-child) {
+  padding-bottom: 2px;
+}
+
+.card-btn {
+  display: inline-block;
+  color: var(--color-secondary);
+}
+
+.card-btn-gold {
+  color: var(--color-light);
+}
+
+.tab-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.tab-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 6px 25px;
+  border-radius: 48px;
+}
+
+.tab-platinum {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.tab-link {
+  text-transform: uppercase;
+  font-size: var(--font-size-sm);
+  color: var(--color-secondary);
+}
+
+.tab-active {
+  background-color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+  .choose-plan {
+    padding: 56px 0 80px;
+  }
+
+  .choose-plan-list {
+    padding: 0 62px;
+    display: flex;
+    justify-content: space-between;
+    height: 280px;
+  }
+
+  .choose-plan-card {
+    position: static;
+    transform: translate(0) scale(1);
+    width: 170px;
+  }
+
+  .card-price {
+    padding-top: 22px;
+  }
+
+  .card-info-list {
+    padding-top: 22px;
+  }
+
+  .tab-list {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .choose-plan {
+    padding: 68px 0 116px;
+  }
+
+  .choose-plan-list {
+    padding: 0 98px;
+    height: 396px;
+  }
+
+  .choose-plan-card {
+    padding: 40px 0 36px;
+    width: 270px;
+  }
+
+  .card-name {
+    font-size: var(--font-size-xl);
+    letter-spacing: 1px;
+  }
+
+  .card-price {
+    padding: 28px 0 15px;
+    font-size: var(--font-size-7xl);
+  }
+
+  .card-price-currency {
+    font-size: var(--font-size-3xl);
+  }
+
+  .card-price-value {
+    letter-spacing: -2.6px;
+  }
+
+  .card-duration {
+    font-size: var(--font-size-xl);
+  }
+
+  .card-info-list {
+    padding: 23px 0 30px;
+    font-size: var(--font-size-md);
+  }
+
+  .card-info-item:not(:last-child) {
+    padding-bottom: 3px;
+  }
+}

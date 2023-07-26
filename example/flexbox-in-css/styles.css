@@ -1,0 +1,61 @@
+.flex-container {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 10px;
+  height: 800px;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.item-left,
+.item-center,
+.item-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  height: 400px;
+}
+
+.flex-container .item-left {
+  background-color: aqua;
+}
+
+.flex-container .item-center {
+  background-color: chocolate;
+}
+
+.flex-container .item-right {
+  background-color: beige;
+}
+
+.content {
+  display: flex;
+  width: 500px;
+}
+
+.content div {
+  flex-basis: 120px;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.box {
+  flex-shrink: 1;
+}
+
+.box-shrink {
+  flex-shrink: 3;
+}
+
+.wrapper {
+  display: flex;
+}
+
+article {
+  flex: 1 200px;
+}
+
+article:nth-of-type(3) {
+  flex: 2 200px;
+}
