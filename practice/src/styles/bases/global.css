@@ -8,8 +8,3 @@ body {
   font-family: var(--font-primary);
   color: var(--color-secondary);
 }
-
-.image {
-  width: 100%;
-  height: auto;
-}

@@ -7,10 +7,18 @@
   letter-spacing: -0.5px;
 }
 
+.section-heading {
+  padding-top: 30px;
+}
+
 @media (min-width: 768px) {
   .heading {
     font-size: var(--font-size-4xl);
     letter-spacing: -0.8px;
+  }
+
+  .section-heading {
+    padding-top: 36px;
   }
 }
 
@@ -18,5 +26,9 @@
   .heading {
     font-size: var(--font-size-6xl);
     letter-spacing: -1.6px;
+  }
+
+  .section-heading {
+    padding-top: 68px;
   }
 }

@@ -1,6 +1,5 @@
 .container {
-  margin: 0 auto;
-  max-width: 290px;
+  margin: 0 15px;
 }
 
 .container-fluid {
@@ -10,12 +9,13 @@
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    margin: 0 24px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
+    margin: 0 auto;
     max-width: 1140px;
   }
 }

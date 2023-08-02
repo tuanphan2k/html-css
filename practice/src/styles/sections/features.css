@@ -1,5 +1,5 @@
 .features {
-  padding: 38px 0 244px;
+  padding-bottom: 244px;
   background-image: url(../../assets/images/mac-mobile-screen.webp);
   background-repeat: no-repeat;
   background-position: center bottom 38px;
@@ -40,9 +40,24 @@
   text-align: right;
 }
 
+.devices-icon {
+  width: 39px;
+  height: 33px;
+}
+
+.diamond-icon {
+  width: 32px;
+  height: 27px;
+}
+
+.stack-layers-icon {
+  width: 24px;
+  height: 32px;
+}
+
 @media (min-width: 768px) {
   .features {
-    padding: 42px 0 126px;
+    padding-bottom: 126px;
     background-image: url(../../assets/images/mac-tablet-screen.webp);
     background-position: right bottom 30px;
   }
@@ -59,7 +74,7 @@
 
 @media (min-width: 1200px) {
   .features {
-    padding: 80px 0 116px;
+    padding-bottom: 116px;
     background-image: url(../../assets/images/mac-desktop-screen.webp);
     background-position: right 72px bottom 59px;
   }

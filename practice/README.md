@@ -8,7 +8,7 @@
 
 ## Timeline
 
-- 44 hours (from 13th - to 26th July, 2023)
+- 72 hours (from 13th - to 26th July, 2023)
 
 ## Team size
 
@@ -17,9 +17,9 @@
 ## Target
 
 - Build site that will be applied all HTML/CSS knowledge
-- Slice from Sketch to HTML/CSS
+- Slice from Figma to HTML/CSS
 - Website optimization
-- Responsive for most browsers like MS Edge, Chrome, Firefox latest version
+- Responsive for most browsers like MS Edge, Chrome, Firefox, and Safari latest version
 
 ## Technical stack
 
@@ -33,11 +33,12 @@
 
 - Use the right HTML tags
 - Apply CSS guideline
-- Apply Flexbox
+- Apply FlexBox
 - Apply mobile-first for practice
 - Responsive (Mobile, Tablet, Desktop)
 - Cross browser testing (MS Edge, Chrome, Firefox, Safari latest version)
-- Check Pagespeed (least > 95 %, but should be 100%)
+- Validate HTML tags usage at W3C
+- Check PageSpeed (least > 95 %, but should be 100%)
 
 ## Getting started
 

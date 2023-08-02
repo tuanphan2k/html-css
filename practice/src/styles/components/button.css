@@ -3,10 +3,9 @@
 .btn {
   padding: 9px 31px;
   border-radius: 50px;
-  background-color: var(--color-primary);
   text-align: center;
   text-transform: uppercase;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   font-family: var(--font-secondary);
   letter-spacing: 0.8px;
   cursor: pointer;
@@ -15,6 +14,11 @@
 .btn:hover {
   opacity: 0.8;
   transition: all 0.3s linear;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .btn-secondary {

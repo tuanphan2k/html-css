@@ -14,7 +14,6 @@
   --color-dark: #7d7d7d;
 
   /* Font size */
-  --font-size-xs: 11px;
   --font-size-sm: 12px;
   --font-size-md: 16px;
   --font-size-xl: 18px;
@@ -24,4 +23,10 @@
   --font-size-5xl: 36px;
   --font-size-6xl: 44px;
   --font-size-7xl: 64px;
+
+  /* Z index */
+  --z-index-first: 1;
+  --z-index-second: 2;
+  --z-index-third: 3;
+  --z-index-drawer: 1000;
 }

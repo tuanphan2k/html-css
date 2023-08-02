@@ -1,5 +1,5 @@
 .choose-plan {
-  padding: 52px 0 40px;
+  padding-bottom: 40px;
   background-color: hsl(0, 0%, 96%);
 }
 
@@ -26,19 +26,19 @@
 .card-silver {
   top: -10px;
   background: linear-gradient(to top, #3a3938 0%, #6f6b6b 100%);
-  z-index: 2;
+  z-index: var(--z-index-second);
   transform: scaleX(0.85) translateX(-59%);
 }
 
 .card-gold {
-  z-index: 3;
+  z-index: var(--z-index-third);
   background: linear-gradient(to top, #ebcb80 0%, #ffe3a1 100%);
 }
 
 .card-platinum {
   top: -20px;
   background: linear-gradient(to top, #141414 0%, #282828 100%);
-  z-index: 1;
+  z-index: var(--z-index-first);
   transform: scaleX(0.74) translateX(-67%);
 }
 
@@ -61,7 +61,7 @@
 
 .card-price-currency {
   font-family: var(--font-secondary);
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
 }
 
 .card-price-value {
@@ -76,19 +76,19 @@
 
 .card-info-list {
   padding: 10px 0 20px;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
 }
 
 .card-info-item:not(:last-child) {
   padding-bottom: 2px;
 }
 
-.card-btn {
+.btn-card {
   display: inline-block;
   color: var(--color-secondary);
 }
 
-.card-btn-gold {
+.btn-gold-card {
   color: var(--color-light);
 }
 
@@ -123,7 +123,7 @@
 
 @media (min-width: 768px) {
   .choose-plan {
-    padding: 56px 0 80px;
+    padding-bottom: 80px;
   }
 
   .choose-plan-list {
@@ -154,7 +154,7 @@
 
 @media (min-width: 1200px) {
   .choose-plan {
-    padding: 68px 0 116px;
+    padding-bottom: 116px;
   }
 
   .choose-plan-list {

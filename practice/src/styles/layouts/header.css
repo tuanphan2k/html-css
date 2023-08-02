@@ -59,7 +59,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: var(--z-index-drawer);
   padding: 40px 20px 0;
   width: 320px;
   height: 100vh;
@@ -82,10 +82,12 @@
 
 .header-close-icon {
   text-align: end;
+  color: var(--color-light);
+  font-size: var(--font-size-3xl);
 }
 
 /* Display menus when click hamburger icon */
-.input-toogle:checked ~ .header-menu {
+.input-toggle:checked ~ .header-menu {
   display: block;
   transform: translateX(0%);
 }
@@ -119,6 +121,17 @@
 
 .scroll-down {
   margin-top: 20px;
+}
+
+.scroll-down-icon {
+  display: inline-block;
+  width: 16px;
+  height: 7px;
+  background-image: url("../../assets/icons/scroll-down.svg");
+}
+
+.scroll-down:hover {
+  opacity: 0.7;
 }
 
 @media (min-width: 768px) {

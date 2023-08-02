@@ -1,4 +1,4 @@
-.footer-main {
+.main-footer {
   background-color: var(--color-secondary);
   text-align: center;
   font-size: var(--font-size-sm);
@@ -42,17 +42,22 @@
   outline: none;
   border: none;
   background-color: inherit;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   color: inherit;
 }
 
-.footer-subscribe-btn {
+.btn-footer-subscribe {
   background-color: transparent;
   cursor: pointer;
+  transition: all 0.3s linear;
 }
 
 .footer-subscribe-icon {
-  height: 26px;
+  height: 23px;
+}
+
+.btn-footer-subscribe:hover {
+  opacity: 0.8;
 }
 
 .footer-info {
@@ -72,6 +77,11 @@
 .info-redirect-link {
   text-decoration: none;
   color: inherit;
+  transition: all 0.1s linear;
+}
+
+.info-redirect-link:hover {
+  color: var(--color-primary);
 }
 
 .footer-invite-follow {
@@ -98,7 +108,7 @@
   height: 18px;
 }
 
-.footer-icon-goole {
+.footer-icon-google {
   width: 26px;
 }
 
@@ -108,15 +118,21 @@
 
 .footer-copyright {
   margin-top: 20px;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   line-height: 16px;
 }
 
 @media (min-width: 768px) {
   .footer-container {
     display: grid;
+    grid-template-columns: 50% 50%;
     padding: 25px 0 40px;
     text-align: start;
+  }
+
+  .footer-content {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
   }
 
   .footer-subscribe {
@@ -130,14 +146,18 @@
     margin-top: 35px;
   }
 
+  .footer-copyright {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin-top: 16px;
+  }
+
   .footer-input-container {
     margin-top: 13px;
     margin-left: 0;
   }
 
   .footer-description {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
     width: 220px;
   }
 
@@ -158,14 +178,10 @@
     margin-top: 14px;
     justify-content: start;
   }
-
-  .footer-copyright {
-    margin-top: 16px;
-  }
 }
 
 @media (min-width: 1200px) {
-  .footer-main {
+  .main-footer {
     font-size: var(--font-size-xl);
   }
 
@@ -216,6 +232,7 @@
   }
 
   .footer-social-list {
+    gap: 35px;
     margin-top: 30px;
   }
 
@@ -224,7 +241,7 @@
     height: 24px;
   }
 
-  .footer-icon-goole {
+  .footer-icon-google {
     width: 36px;
   }
 

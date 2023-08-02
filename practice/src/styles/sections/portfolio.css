@@ -1,5 +1,5 @@
 .portfolio {
-  padding: 32px 0 72px;
+  padding-bottom: 72px;
 }
 
 .portfolio-boxer {
@@ -64,7 +64,7 @@
 }
 
 .overlay-content-container {
-  padding: 8px;
+  padding: 7px;
 }
 
 .portfolio-project:nth-child(3n) .overlay-content-container {
@@ -94,13 +94,13 @@
 
 .project-decs {
   margin-top: 18px;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
 }
 
 .project-decs::before {
   content: "";
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   width: 14px;
   height: 2px;
   background-color: var(--color-light);
@@ -151,12 +151,18 @@
   width: 32px;
   height: 32px;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-.pagination-item-active {
+.pagination-item-active,
+.pagination-item:hover {
   background-color: var(--color-light);
   border-radius: 50%;
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.pagination-item-tablet {
+  display: none;
 }
 
 .pagination-link {
@@ -167,8 +173,24 @@
   color: var(--color-primary);
 }
 
-.pagination-item-btn {
+.btn-pagination-item {
+  padding-top: 2px;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.pagination-icon {
+  display: inline-block;
+  width: 9px;
+  height: 18px;
+}
+
+.pagination-next-icon {
+  background-image: url("../../assets/icons/next.svg");
+}
+
+.pagination-previous-icon {
+  background-image: url("../../assets/icons/previous.svg");
 }
 
 /* Tablet styles */
@@ -253,8 +275,14 @@
   .media-statistic {
     margin-top: 16px;
     display: flex;
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
     gap: 16px;
+  }
+
+  .media-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .media-item-total {
@@ -262,11 +290,29 @@
   }
 
   .media-item-icon {
-    vertical-align: middle;
+    display: inline-block;
+    height: 12px;
+    vertical-align: bottom;
+  }
+
+  .media-view-icon {
+    width: 18px;
+    height: 11px;
+    background-image: url("../../assets/icons/view.svg");
+  }
+
+  .media-ellipse-icon {
+    width: 14px;
+    background-image: url("../../assets/icons/ellipse.svg");
+  }
+
+  .media-comment-icon {
+    width: 14px;
+    background-image: url("../../assets/icons/comment.svg");
   }
 
   .project-scenery {
-    padding: 32px 29px 28px 22px;
+    padding: 32px 22px 28px;
   }
 
   .project-scenery-decs {
@@ -283,6 +329,10 @@
   /* Pagination */
   .portfolio-pagination {
     width: 298px;
+  }
+
+  .pagination-item-tablet {
+    display: flex;
   }
 }
 

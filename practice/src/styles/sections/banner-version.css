@@ -16,7 +16,7 @@
   width: 240px;
 }
 
-.banner-version-btn {
+.btn-banner-version {
   margin-bottom: 103px;
 }
 
@@ -34,7 +34,7 @@
     width: 470px;
   }
 
-  .banner-version-btn {
+  .btn-banner-version {
     margin-bottom: 88px;
   }
 }
@@ -53,7 +53,7 @@
     width: 554px;
   }
 
-  .banner-version-btn {
+  .btn-banner-version {
     margin-bottom: 188px;
   }
 }
